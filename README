@@ -1,64 +1,35 @@
-NetScan is a fast, multi-threaded network mapping and port scanning tool that helps system administrators, ethical hackers, and security professionals discover live hosts, open ports, and potentially vulnerable services on a network. It generates detailed HTML reports for easy visualization and sharing.
+Make sure you have Python 3.8+ installed.
 
-🔹 Key Features
-1. Fast Host Discovery
+git clone https://github.com/yourusername/netscan.git
+cd netscan
 
-Scans single IPs, subnets (CIDR), or lists of IPs.
+Scan a subnet (default ports, default threads):
+python netscan.py --target 192.168.1.0/24
 
-Detects live hosts quickly using TCP connect on common ports.
+Scan a single IP with custom ports:
+python netscan.py --target 10.0.0.5 --ports 22,80,443
 
-Helps identify which devices are active on the network.
+Scan using a file of IPs:
+python netscan.py --targets-file targets.txt
 
-2. Port Scanning
+Set the number of threads and socket timeout:
+python netscan.py --target 192.168.1.0/24 --threads 200 --timeout 1.5
 
-Multi-threaded scanning of configurable ports.
+Output
 
-Identifies open, closed, or filtered ports.
+Hosts discovered and their status (UP/DOWN)
 
-Uses hundreds of concurrent threads for maximum speed.
+Open and closed ports
 
-3. Service Banner Detection
+Captured service banners
 
-Captures service banners for open ports.
+Summary of total hosts scanned, ports checked, and open ports found
 
-Reveals software types and versions running on devices.
+Color-coded HTML report for easy reading in browsers
 
-Helps detect outdated or vulnerable services (SSH, HTTP, RDP, databases, etc.).
+Warning ⚠️
 
-4. HTML Reporting
+Only use NetScan on networks you own or are explicitly authorized to test.
 
-Generates visually clear HTML reports.
+Unauthorized scanning may be illegal in your jurisdiction.
 
-Includes color-coded tables for open/closed ports and banners.
-
-Easy to share with colleagues or clients, no extra software required.
-
-5. Configurable & Lightweight
-
-Customizable ports, timeout, and thread count.
-
-Runs on Windows, Linux, or macOS with Python 3.
-
-No external dependencies required for basic scanning.
-
-🔹 Use Cases
-
-Ethical Hackers & Pen Testers → Quickly discover network devices and potential attack points.
-
-Network Administrators → Map network topology, find misconfigured devices, and secure exposed services.
-
-Small & Medium Businesses → Get affordable insight into network security without expensive enterprise tools.
-
-🔹 Advantages
-
-Speed: Multi-threaded scanning allows rapid mapping of large networks.
-
-Clarity: HTML reports make results easy to read and act on.
-
-Flexibility: Works on single hosts, subnets, or large IP lists.
-
-Foundational Tool: Can be extended into a SaaS platform for continuous monitoring or integrated into a full security dashboard.
-
-If you want, I can create a next-level roadmap for NetScan showing how you could expand it into a full SaaS cybersecurity platform, including features like real-time traffic monitoring, alerts, and automated vulnerability reporting.
-
-Do you want me to do that?
