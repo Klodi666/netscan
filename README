@@ -1,0 +1,64 @@
+NetScan is a fast, multi-threaded network mapping and port scanning tool that helps system administrators, ethical hackers, and security professionals discover live hosts, open ports, and potentially vulnerable services on a network. It generates detailed HTML reports for easy visualization and sharing.
+
+🔹 Key Features
+1. Fast Host Discovery
+
+Scans single IPs, subnets (CIDR), or lists of IPs.
+
+Detects live hosts quickly using TCP connect on common ports.
+
+Helps identify which devices are active on the network.
+
+2. Port Scanning
+
+Multi-threaded scanning of configurable ports.
+
+Identifies open, closed, or filtered ports.
+
+Uses hundreds of concurrent threads for maximum speed.
+
+3. Service Banner Detection
+
+Captures service banners for open ports.
+
+Reveals software types and versions running on devices.
+
+Helps detect outdated or vulnerable services (SSH, HTTP, RDP, databases, etc.).
+
+4. HTML Reporting
+
+Generates visually clear HTML reports.
+
+Includes color-coded tables for open/closed ports and banners.
+
+Easy to share with colleagues or clients, no extra software required.
+
+5. Configurable & Lightweight
+
+Customizable ports, timeout, and thread count.
+
+Runs on Windows, Linux, or macOS with Python 3.
+
+No external dependencies required for basic scanning.
+
+🔹 Use Cases
+
+Ethical Hackers & Pen Testers → Quickly discover network devices and potential attack points.
+
+Network Administrators → Map network topology, find misconfigured devices, and secure exposed services.
+
+Small & Medium Businesses → Get affordable insight into network security without expensive enterprise tools.
+
+🔹 Advantages
+
+Speed: Multi-threaded scanning allows rapid mapping of large networks.
+
+Clarity: HTML reports make results easy to read and act on.
+
+Flexibility: Works on single hosts, subnets, or large IP lists.
+
+Foundational Tool: Can be extended into a SaaS platform for continuous monitoring or integrated into a full security dashboard.
+
+If you want, I can create a next-level roadmap for NetScan showing how you could expand it into a full SaaS cybersecurity platform, including features like real-time traffic monitoring, alerts, and automated vulnerability reporting.
+
+Do you want me to do that?
