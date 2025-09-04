@@ -1,6 +1,6 @@
 Make sure you have Python 3.8+ installed.
 
-git clone https://github.com/yourusername/netscan.git
+git clone https://github.com/Klodi666/netscan
 cd netscan
 
 Scan a subnet (default ports, default threads):
